@@ -1,0 +1,314 @@
+
+/*////////////////////RESET STYLE SHEET, DO NOT EDIT ////////////////*/
+/*  DOOOO NOT EDITT THIS SECTION!!!*/
+*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/*/////////////EDIT OK AFTER HERE///////////////////////  */
+/*////////////////////My Code////////////////////////////*/
+*{
+  margin:0;
+  padding: 0;
+  text-decoration: none;
+}
+
+
+body{
+  background-color: #fff;
+}
+
+header{
+background-color: #fff;
+width: 100%;
+height: 100px;
+margin:0;
+padding: 0;
+}
+
+/*///////////////////////MOBILE VERSION///////////////////*/
+header .header-brand{
+  font-family: Catamaran
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+  display: block;
+  color: #111;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header nav ul{
+  display: block;
+  margin: 0 auto; /*move navigation*/
+  width: fit-content;
+}
+
+header nav ul li {
+list-style: none;
+display: inline-block;
+float: left;
+line-height: 100px;
+padding: 0 16px;
+}
+
+
+header nav ul li a{
+font-size: 16px;
+font-family: Catamaran;
+color: #111;
+text-transform: uppercase;
+}
+
+header .header-cases{
+  display: none;
+}
+
+.index-banner{
+  width: 100%;
+  height: calc(100vh - 150px); /*calc does what you think it says*/
+  background-image: url('images/one.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: table;
+}
+.vert-center-text{
+display: table-cell;
+vertical-align: middle;
+
+}
+
+.index-banner h2{
+  font-size: 60px;
+  font-family: Catamaran;
+  color: #fff;
+  text-align: center;
+  font-weight: 900;
+  line-height: 70px;
+  text-shadow: 2px 2px 8px #111;
+}
+
+.index-banner h1{
+  font-size: 28px;
+  font-family: Catamaran Garamond;
+  color: #fff;
+  text-align: center;
+  font-style: italic;
+  line-height: 40px;
+  font-weight: 100;
+  text-shadow: 2px 2px 8px #111;
+}
+
+.index-links {
+  margin: 16px 16px 0;
+  width: calc(100% - 32px);
+  height: 100px;
+  /*dope color schemes*/
+    /* background-color: #eee */
+  background: #ffd89b;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #19547b, #ffd89b);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #19547b, #ffd89b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.index-links  h3{
+  font-size: 28px;
+  font-family: Catamaran;
+  color: #111;
+  text-align: center;
+  line-height: 100px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.pictureOfMe{
+  width: 300px;
+  height: 200px;
+  background-image: url(images/Me.jpg);
+  /* background-size: contain; /*contains makes it always fir the container*/ */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pictureOfMe:hover{
+  width: 300px;
+  height: 200px;
+  background-image: url(images/Me.jpg);
+  /* background-size: contain; /*contains makes it always fir the container*/ */
+   background-size: cover;
+   background-position: center;
+  background-repeat: no-repeat;;
+}
+
+footer{
+  width: calc(100% - 80px);
+  padding: 40px 40px;
+  margin-top: 20px;
+  overflow: hidden;
+background-color: #fff;
+}
+
+.footer-icon{
+  width: 100%;
+  margin-bottom: 10px;
+}
+/*///////////////////END OF MOBILE VERSION/////////////////////////*/
+
+/*////////////////////DESKTOP VERSION//////////////////////*/
+@media only screen and (min-width: 1000px){
+    header .header-brand{
+      margin: 31px 0;
+      text-align: left;
+      line-height: 38px;
+      padding: 0px 40px 0px 40px;
+      border-right: 3px solid #111;
+      float: left;
+    }
+    header nav ul{
+      margin: 0px 0px 0px 20px;
+      line-height: 60px;/*move navigation*/
+      float: left;
+    }
+
+    header nav ul li a{
+    line-height: 60px;
+    }
+
+    header .header-cases{
+      display: block;
+      font-size: 16px;
+      font-family: Catamaran;
+      color: #111;
+      text-transform: uppercase;
+      line-height: 60px;
+      border: 1px solid #111;
+      float: right;
+      margin-right: 40px;
+      margin-top: 20px;
+      padding: 0 20px;
+    }
+  }
+
+}  /*////////End of Desktop Version//////////////////////////*/
+
+@media only screen and (min-width: 1000px){
+  .index-banner{
+    height: 450px; /*calc does what you think it says*/
+    }
+  .index-banner h1{
+    display: block;
+    width: 560px;
+    margin: 0 auto;
+    }
+  .index-links {
+    margin: 10px 10px 0;
+    width: calc(25% - 60px) !important;
+    height: 100px;
+    }
+  .main-content-wrapper{
+    width: 1000px;
+    margin: 0 auto;
+    }
+}
+/*////////End of Desktop Version//////////////////////////*/
