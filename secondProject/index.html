@@ -1,80 +1,310 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <!-- this is for the mobile version of our website -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
-  </head>
-    <body>
 
-      <header>
-        <a href="index.html" class="header-brand"> DaveSmith</a>
-        <nav>
-            <ul>
-              <li><a href="aboutMe.html"> About Me</a></li>
-              <li><a href="rootfolder/index.html"> Portfolio</a></li>
-              <li><a href="contact.html"> Contact</a></li>
-            </ul>
-            <a href="cases.html" class="header-cases"> Cases </a>
-          <!-- <img src="pictures/TMB.jpg" alt="TMB picture"> -->
-        </nav>
-      </header>
-      <main>
-        <section class="index-banner">
-          <div class="vert-center-text">
-            <h2>I AM A FREELANCE SOFTWARE ENGINEER</h2>
-            <h1>With a specialty in full stack development, functionality, and algorythms</h1>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+  body, html {
+      height: 100%;
+      color: #777;
+      line-height: 1.8;
+  }
+
+  /* Create a Parallax Effect */
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  /* First image (Logo. Full height) */
+  .bgimg-1 {
+    background-image: url('images/41.jpg');
+      min-height: 100%;
+  }
+
+  /* Second image (Portfolio) */
+  .bgimg-2 {
+      background-image: url("images/TMB.jpg");
+      min-height: 400px;
+  }
+
+  /* Third image (Contact) */
+  .bgimg-3 {
+      background-image: url("images/32.jpg");
+      min-height: 400px;
+  }
+
+  .w3-wide {letter-spacing: 10px;}
+  .w3-hover-opacity {cursor: pointer;}
+
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 1600px) {
+      .bgimg-1, .bgimg-2, .bgimg-3 {
+          background-attachment: scroll;
+          min-height: 400px;
+      }
+  }
+  </style>
+
+<body>
+  <div class="w3-top">
+    <header>
+      <a href="index.html" class="header-brand"> DaveSmith</a>
+      <nav>
+        <ul>
+          <li><a href="aboutMe.html"> About Me</a></li>
+          <li><a href="portfolio.html"> Portfolio</a></li>
+          <li><a href="contact.php"> Contact</a></li>
+        </ul>
+        <a href="cases.html" class="header-cases"> Pictures </a>
+        <!-- <img src="pictures/TMB.jpg" alt="TMB picture"> -->
+      </nav>
+    </header>
+
+    <!-- Navbar (sit on top) -->
+
+
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+      <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+      <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    </div>
+  </div>
+
+  <!-- First Parallax Image with Logo Text -->
+  <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+      <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> <span class="w3-hide-small"></span>Welcome </span>
+    </div>
+  </div>
+
+  <!-- Container (About Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="about">
+    <h3 class="w3-center">ABOUT ME</h3>
+    <p class="w3-center"><em>I love photography and programing</em></p>
+    <p>Hello, I am recent Sonoma State University graduate, with a degree in computer science. I have passion for learning new technologies, programming, machine learning, hiking,  photography, soccer and helping others. I have recently been doing freelance web development and photography with my spare time as a hobby. I have been praised by my colleagues and classmates as a hard worker, problem solver, and team leader. I excel with communications which I believe is hard to find in the typical programmer. Where do I see myself in four years? Developing or managing a team to deliver software to help people on a daily basis.  </p>
+    <div class="w3-row">
+      <div class="w3-col m6 w3-center w3-padding-large">
+        <p><b><i class="fa fa-user w3-margin-right"></i>David Smith</b></p><br>
+        <img src="images/aboutMe.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+      </div>
+
+      <!-- Hide this text on small devices -->
+      <div class="w3-col m6 w3-hide-small w3-padding-large">
+        <p> I am actively looking and interviewing for software engineering career. I would like to work in an engaging, challenging, and friendly work environment where exploring and testing is encouraged. Staying in California would be my preferance, but if a great opportunity arises I am willing to relocate. When it comes to company size I enjoy working with a small team but I also would enjoy working with a medium size company. You can find my resume and portfolio above in the navigation area. My github, Facebook, and LinkedIn is also available at the bottom of this page. If you are interested in hiring me as a freelance developer or photographer please send me a message through the contact page, or shoot me an email. I enjoy chatting about ideas, technology, sports, traveling and more! So please dont hesitate to contact me, Cheers! </p>
+      </div>
+    </div>
+    <p class="w3-large w3-center w3-padding-16">I'm really good at:</p>
+    <p class="w3-wide"><i class="fa fa-laptop"></i>Full Stack Software Engineer</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+    </div>
+    <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design/Mobile Development</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+    </div>
+    <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+    </div>
+  </div>
+
+  <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">1+</span><br>
+      Partners
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">40+</span><br>
+      Programing Projects
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">3+</span><br>
+      Happy Clients
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">150+</span><br>
+      Professional Photography
+    </div>
+  </div>
+
+  <!-- Second Parallax Image with Portfolio Text -->
+  <div class="bgimg-2 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-white w3-wide">PHOTOGRAPHY</span>
+    </div>
+  </div>
+
+  <!-- Container (Portfolio Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <h3 class="w3-center">MY PHOTOGRAPY WORK</h3>
+    <p class="w3-center"><em>Here are some of my latest shots I have gotten while trecking.<br> Click on the images to make them bigger</em></p><br>
+
+    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <div class="w3-row-padding w3-center">
+      <div class="w3-col m3">
+        <img src="images/41.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="images/42.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="images/43.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="images/44.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+      </div>
+    </div>
+
+    <div class="w3-row-padding w3-center w3-section">
+      <div class="w3-col m3">
+        <img src="images/45.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="images/46.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="images/47.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="images/48.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+      </div>
+      <a href="cases.html"><button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">More  </button></a>
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image" src="images/tech.jpg">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div>
+
+  <!-- Third Parallax Image with Portfolio Text -->
+  <div class="bgimg-3 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+    </div>
+  </div>
+
+  <!-- Container (Contact Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="contact">
+    <h3 class="w3-center">WHERE I WORK</h3>
+    <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+    <div class="w3-row w3-padding-32 w3-section">
+      <div class="w3-col m4 w3-container">
+        <img src="images/davis.jpg" class="w3-image w3-round" style="width:100%">
+      </div>
+      <div class="w3-col m8 w3-panel">
+        <div class="w3-large w3-margin-bottom">
+          <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Davis, CA, US<br>
+          <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 1-530-601-1922<br>
+          <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: 1426davejobs@gmail.com<br>
+        </div>
+        <p>Let's grab a coffee :)<i class="fa fa-coffee"></i>, or leave me a note:</p>
+        <form action="contactPHP.php" method="POST" role="form">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" for="name"  name="name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" for='email' name="email">
+            </div>
           </div>
-        </section>
-        <div class="main-content-wrapper">
-          <section>
-            <a href="rootfolder/index.html">
-              <div class="index-links">
-                <h3>Portfolio</h3>
-              </div>
-            </a>
-            <a href="#">
-              <div class="index-links">
-                <h3>Pictures</h3>
-              </div>
-            </a>
-            <a href="#">
-              <div class="index-links">
-                <h3>Connect With Me</h3>
-              </div>
-            </a>
-            <a href="#">
-              <div class="index-links">
-                <h3>Computer Science</h3>
-              </div>
-            </a>
-            <a href="#">
-              <div class="index-links">
-                <h3>Portfolio</h3>
-              </div>
-            </a>
-          </section>
-        </div>
-      </main>
+          <input class="w3-input w3-border" type="text" placeholder="Message" for="message"  name="message">
+          <button class="w3-button w3-black w3-right w3-section" name="submit" type="submit" data-submit="...Sending">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </form>
+      </div>
+    </div>
+      <a href="#home" class="tb"class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  </div>
+<!-- <img src="images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%;"> -->
+  <!-- Footer -->
+  <div class="main-content-wrapper">
+    <footer>
+      <ul class="footer-links-main">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cases.html">Photography</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="aboutMe.html">About Me</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+      <ul class="footer-links-casses">
+        <!-- <li>latest Cases</li> -->
+        <li><a href="#">unused link</a></li>
+        <li><a href="#">unused link</a></li>
+        <li><a href="#">unused link</a></li>
+        <li><a href="#">unused link</a></li>
+      </ul>
+      <div class="footer-icon">
+        <a href="https://www.linkedin.com/in/david-smith-51a94411b/">
+          <img src="images/linkedin.png" alt="linked in">
+        </a>
+        <a href="https://www.instagram.com/smith_dave_91/">
+          <img src="images/insta.png" alt="insta">
+        </a>
+        <a href="https://github.com/slixxz">
+          <img src="images/git.jpg" alt="git hub">
+        </a>
+      </div>
+    </footer>
+  </div>
 
-      <footer>
-        <div class="footer-icon">
-          <a href="https://www.linkedin.com/in/david-smith-51a94411b/"
-            <img src="images/linkedin.png" alt="linked in">
-          </a>
-          <a href="https://www.instagram.com/smith_dave_91/"
-            <img src="images/insta.png" alt="insta">
-          </a>
-          <a href="https://github.com/slixxz"
-            <img src="images/git.jpg" alt="git hub">
-          </a>
-        </div>
-      </footer>
-    <!-- <div class="wrapper">
-      <div class="pictureOfMe"></div>
-    </div> -->
+  <script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
 
-  </body>
+    // Change style of navbar on scroll
+    window.onscroll = function() {
+      myFunction()
+    };
+
+    function myFunction() {
+      var navbar = document.getElementById("myNavbar");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+      } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+      }
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+</body>
+
 </html>
