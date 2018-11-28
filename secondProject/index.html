@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <link rel="shortcut icon" type="image/png" href="images/icon.PNG">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
@@ -65,7 +66,7 @@
           <li><a href="portfolio.html"> Portfolio</a></li>
           <li><a href="contact.php"> Contact</a></li>
         </ul>
-        <a href="cases.html" class="header-cases"> Pictures </a>
+        <a href="cases.html" class="header-cases"> TCT Pictures </a>
         <!-- <img src="pictures/TMB.jpg" alt="TMB picture"> -->
       </nav>
     </header>
@@ -93,7 +94,9 @@
   <div class="w3-content w3-container w3-padding-64" id="about">
     <h3 class="w3-center">ABOUT ME</h3>
     <p class="w3-center"><em>I love photography and programing</em></p>
-    <p>Hello, I am recent Sonoma State University graduate, with a degree in computer science. I have passion for learning new technologies, programming, machine learning, hiking,  photography, soccer and helping others. I have recently been doing freelance web development and photography with my spare time as a hobby. I have been praised by my colleagues and classmates as a hard worker, problem solver, and team leader. I excel with communications which I believe is hard to find in the typical programmer. Where do I see myself in four years? Developing or managing a team to deliver software to help people on a daily basis.  </p>
+    <p>Hello, I am recent Sonoma State University graduate, with a degree in computer science. I have passion for learning new technologies, programming, machine learning, hiking, photography, soccer and helping others. I have recently been doing
+      freelance web development and photography with my spare time as a hobby. I have been praised by my colleagues and classmates as a hard worker, problem solver, and team leader. I excel with communications which I believe is hard to find in the
+      typical programmer. Where do I see myself in four years? Developing or managing a team to deliver software to help people on a daily basis. </p>
     <div class="w3-row">
       <div class="w3-col m6 w3-center w3-padding-large">
         <p><b><i class="fa fa-user w3-margin-right"></i>David Smith</b></p><br>
@@ -102,7 +105,10 @@
 
       <!-- Hide this text on small devices -->
       <div class="w3-col m6 w3-hide-small w3-padding-large">
-        <p> I am actively looking and interviewing for software engineering career. I would like to work in an engaging, challenging, and friendly work environment where exploring and testing is encouraged. Staying in California would be my preferance, but if a great opportunity arises I am willing to relocate. When it comes to company size I enjoy working with a small team but I also would enjoy working with a medium size company. You can find my resume and portfolio above in the navigation area. My github, Facebook, and LinkedIn is also available at the bottom of this page. If you are interested in hiring me as a freelance developer or photographer please send me a message through the contact page, or shoot me an email. I enjoy chatting about ideas, technology, sports, traveling and more! So please dont hesitate to contact me, Cheers! </p>
+        <p> I am actively looking and interviewing for software engineering career. I would like to work in an engaging, challenging, and friendly work environment where exploring and testing is encouraged. Staying in California would be my
+          preferance, but if a great opportunity arises I am willing to relocate. When it comes to company size I enjoy working with a small team but I also would enjoy working with a medium size company. You can find my resume and portfolio above
+          in the navigation area. My github, Facebook, and LinkedIn is also available at the bottom of this page. If you are interested in hiring me as a freelance developer or photographer please send me a message through the contact page, or shoot
+          me an email. I enjoy chatting about ideas, technology, sports, traveling and more! So please dont hesitate to contact me, Cheers! </p>
       </div>
     </div>
     <p class="w3-large w3-center w3-padding-16">I'm really good at:</p>
@@ -122,8 +128,8 @@
 
   <div class="w3-row w3-center w3-dark-grey w3-padding-16">
     <div class="w3-quarter w3-section">
-      <span class="w3-xlarge">1+</span><br>
-      Partners
+      <span class="w3-xlarge">8+</span><br>
+      Years of programming
     </div>
     <div class="w3-quarter w3-section">
       <span class="w3-xlarge">40+</span><br>
@@ -134,8 +140,8 @@
       Happy Clients
     </div>
     <div class="w3-quarter w3-section">
-      <span class="w3-xlarge">150+</span><br>
-      Professional Photography
+      <span class="w3-xlarge">1,000+</span><br>
+      Professional Photography Shots
     </div>
   </div>
 
@@ -150,6 +156,7 @@
   <div class="w3-content w3-container w3-padding-64" id="portfolio">
     <h3 class="w3-center">MY PHOTOGRAPY WORK</h3>
     <p class="w3-center"><em>Here are some of my latest shots I have gotten while trecking.<br> Click on the images to make them bigger</em></p><br>
+    <div id="map"></div>
 
     <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
     <div class="w3-row-padding w3-center">
@@ -186,7 +193,7 @@
       <div class="w3-col m3">
         <img src="images/48.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
       </div>
-      <a href="cases.html"><button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">More  </button></a>
+      <a href="cases.html"><button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">More </button></a>
     </div>
   </div>
 
@@ -205,42 +212,45 @@
       <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
     </div>
   </div>
-
+<div id="map"></div>
   <!-- Container (Contact Section) -->
   <div class="w3-content w3-container w3-padding-64" id="contact">
-    <h3 class="w3-center">WHERE I WORK</h3>
-    <p class="w3-center"><em>I'd love your feedback!</em></p>
+    <div id="map"></div>
 
-    <div class="w3-row w3-padding-32 w3-section">
-      <div class="w3-col m4 w3-container">
-        <img src="images/davis.jpg" class="w3-image w3-round" style="width:100%">
-      </div>
-      <div class="w3-col m8 w3-panel">
-        <div class="w3-large w3-margin-bottom">
-          <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Davis, CA, US<br>
-          <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 1-530-601-1922<br>
-          <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: 1426davejobs@gmail.com<br>
+      <h3 class="w3-center">WHERE I WORK</h3>
+      <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+      <div class="w3-row w3-padding-32 w3-section">
+        <div class="w3-col m4 w3-container">
+          <img src="images/davis.jpg" class="w3-image w3-round" style="width:100%">
         </div>
-        <p>Let's grab a coffee :)<i class="fa fa-coffee"></i>, or leave me a note:</p>
-        <form action="contactPHP.php" method="POST" role="form">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" for="name"  name="name">
-            </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" for='email' name="email">
-            </div>
+        <div class="w3-col m8 w3-panel">
+          <div class="w3-large w3-margin-bottom">
+            <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Davis, CA, US<br>
+            <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 1-530-601-1922<br>
+            <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: 1426davejobs@gmail.com<br>
           </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" for="message"  name="message">
-          <button class="w3-button w3-black w3-right w3-section" name="submit" type="submit" data-submit="...Sending">
-            <i class="fa fa-paper-plane"></i> SEND MESSAGE
-          </button>
-        </form>
+          <p>Let's grab a coffee :)<i class="fa fa-coffee"></i>, or leave me a note:</p>
+          <form action="contactPHP.php" method="POST" role="form">
+            <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Name" for="name" name="name">
+              </div>
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Email" for='email' name="email">
+              </div>
+            </div>
+            <input class="w3-input w3-border" type="text" placeholder="Message" for="message" name="message">
+            <button class="w3-button w3-black w3-right w3-section" name="submit" type="submit" data-submit="...Sending">
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+          </form>
+        </div>
       </div>
+      <a href="#home" class="tb" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
     </div>
-      <a href="#home" class="tb"class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   </div>
-<!-- <img src="images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%;"> -->
+  <!-- <img src="images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%;"> -->
   <!-- Footer -->
   <div class="main-content-wrapper">
     <footer>
@@ -253,10 +263,12 @@
       </ul>
       <ul class="footer-links-casses">
         <!-- <li>latest Cases</li> -->
+        <!-- <li><a href="#">unused link</a></li>
         <li><a href="#">unused link</a></li>
         <li><a href="#">unused link</a></li>
-        <li><a href="#">unused link</a></li>
-        <li><a href="#">unused link</a></li>
+        <li><a href="#">unused link</a></li> -->
+        <li>1426davejobs@gmail.com</li>
+        <li>530-601-1922</li>
       </ul>
       <div class="footer-icon">
         <a href="https://www.linkedin.com/in/david-smith-51a94411b/">
@@ -304,7 +316,25 @@
         x.className = x.className.replace(" w3-show", "");
       }
     }
+
+    // Map Function! AIzaSyB0KlGcz4d_sEZ1QSOIYnU0-UYWeEJptO8
   </script>
+<script>
+function initMap() {
+  var location = {
+    lat: 38.546719,
+    lng: -121.744339
+  };
+  var map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: location
+  });
+}
+</script>
+<script async defer src ="https://maps.googleapis.com/maps/api/js?key= AIzaSyB0KlGcz4d_sEZ1QSOIYnU0-UYWeEJptO8&callback=initMap">
+</script>
+
+
 </body>
 
 </html>

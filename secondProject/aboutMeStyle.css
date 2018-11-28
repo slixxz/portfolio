@@ -103,6 +103,15 @@ input, select {
 }
 /* MY CODE STARTS HERE */
 
+body background{
+  background-image: url('images/tech.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.aboutMeSection p{
+  
+}
 
 
 .about-me{
@@ -155,4 +164,31 @@ background-color: #85af4b;
   max height: 100%;
   float: left;
 
+}
+.wrapper{
+  margin: 0 auto;
+  width:80%;
+
+}
+
+.videowrapper{
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 25px;
+height: 0px;
+}
+
+.videowrapper iframe{
+position: absolute;
+left: 0px;
+right: 0px;
+top: 0px;
+bottom: 0px;
+height: 100%;
+width: 100%;
+}
+
+.wrapper video{
+  width:100%;
+  height: 100%;
 }

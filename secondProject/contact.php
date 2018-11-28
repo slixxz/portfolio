@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <link rel="shortcut icon" type="image/png" href="images/icon.PNG">
   <meta charset="utf-8">
   <!-- this is for the mobile version of our website -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
